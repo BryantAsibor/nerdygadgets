@@ -18,14 +18,18 @@ body{
 }
 
 .container{
-    padding: 0 0px;
 
 }
 
 /*Achtergrond van voorpagina*/
-.header{
+header{
+    background: #000;
     width: 100%;
-    height: 100vh;
+}
+
+.header{
+    padding: 0 15px;
+    position: sticky;
 }
 
 .navbar{
@@ -51,7 +55,6 @@ body{
 
 .navbar ul {
     position: relative;
-    background: #000;
     width: 100%;
     margin-top: 0px;
 }
