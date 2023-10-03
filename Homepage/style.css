@@ -12,9 +12,10 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.90), rgba(0,0,0,0.90)), url(img/backgroundwhite.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.90), rgba(0,0,0,0.90)), url(img/backgroundlaptop.jpg);
     background-size: cover;
     background-position: center;
+    height: 1000px;
 }
 
 .container{
@@ -28,7 +29,7 @@ header{
 }
 
 .header{
-    padding: 0 15px;
+    padding: 0 5%;
     position: sticky;
 }
 
