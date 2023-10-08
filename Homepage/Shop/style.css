@@ -88,72 +88,89 @@ header{
     width: 100%;
 }
 
+
+
+
+
+
+
+
 .content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
+
+    color: #FFFFFF;
 }
 
-.content h1{
-    font-size: 70px;
-    margin-top: 80px;
-}
-
-.content p{
-    margin: 20px auto;
-    padding: 0;
-    font-weight: 100;
-    line-height: 25px;
-}
-
-button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #FF0000;
-    background: transparent;
-    color: #FFF;
+.productenrij1 {
+    display: flex;
+   flex-direction: row;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
+    justify-content: space-around;
+    color: white;
+    margin-top: 20px;
+
+.hr {
+    color: #FFFFFF;
 }
 
-span{
-    background: #FF0000;
-    height: 100%;
-    width: 0%;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
 }
 
-button:hover span{
-    width: 100%;
+.productenrij2 {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: space-around;
+    color: white;
+    margin-top: 40px;
 }
 
-button:hover{
-    border: none;
+.productenrij3 {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: space-around;
+    color: white;
+    margin-top: 40px;
 }
 
-style.css
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    .imgproduct {
+    width: 190px;
+
 }
+
+
+.koopknop {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     position: absolute;
-    bottom: -20%;
+    bottom: -70%;
     left: auto;
     right: 0;
     background: #111;
@@ -162,6 +179,7 @@ footer{
     font-family: "Open Sans";
     padding-top: 40px;
     color: #fff;
+
 }
 .footer-content{
     display: flex;
