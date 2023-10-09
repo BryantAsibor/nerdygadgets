@@ -53,17 +53,6 @@ header{
     cursor: pointer;
     z-index: 17;
 }
-.product{
-    position: relative;
-    margin-left: 1%;
-    right: 0;
-    display: flex;
-    top: 50%;
-    text-align: start;
-    width: auto;
-    cursor: pointer;
-    z-index: 0;
-}
 
 .navbar ul {
     position: relative;
@@ -164,7 +153,7 @@ style.css
 
 footer{
     position: absolute;
-    bottom: -100%;
+    bottom: -20%;
     left: auto;
     right: 0;
     background: #111;
