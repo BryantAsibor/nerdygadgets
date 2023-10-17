@@ -64,6 +64,10 @@ header{
     cursor: pointer;
     z-index: 0;
 }
+.producten {
+    text-align: center;
+    margin-bottom: 5px;
+}
 
 .navbar ul {
     position: relative;
