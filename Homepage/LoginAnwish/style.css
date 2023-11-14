@@ -1,0 +1,53 @@
+
+
+
+.afb1 {
+    width: 200px;
+    height: auto;
+    margin: auto auto auto auto;
+
+
+}
+
+.homepagelink {
+
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+.loginbox {
+
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid black;
+    margin-left: 130px;
+    margin-right: 130px;
+
+
+}
+
+.input-field {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column-reverse;
+}
+
+.forget {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.forgotpassw {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.remeber {
+    display: flex;
+    justify-content: center;
+}
