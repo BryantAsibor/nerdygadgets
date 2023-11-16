@@ -1,0 +1,30 @@
+
+
+
+
+.logo {
+    display: flex;
+    width: 200px;
+    margin: auto;
+}
+
+
+
+
+
+.loginbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+.gegevens {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
