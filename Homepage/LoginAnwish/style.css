@@ -1,12 +1,24 @@
 
 body {
-    background-image: url('achtergrondlogin.png'); /* Vervang 'achtergrondlogin.jpg' door het juiste pad naar je afbeeldingsbestand */
+    background-image: url('achtergrondlogin.png');
     background-size: cover;
     background-attachment: fixed;
 }
 
+
+
+.login {
+    color: #FFFFFF;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: -20px;
+
+}
+
+
 .loginbox {
-    background-color: rgba(255, 255, 255, 0.8); /* Achtergrondkleur met opaciteit voor het formulier */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -38,11 +50,11 @@ body {
     display: flex;
     justify-content: center;
 
-    border: 1px solid black;
+    border: 3px solid #A54136;
     margin-left: 35%;
     margin-right: 35%;
-    background: #A54136;
-    background: rgba(165, 65, 54, 0.9);
+    background-color: rgb(0, 0, 0, 0.9);
+
 
 
 }
@@ -51,6 +63,7 @@ body {
     display: flex;
     margin-top: 10px;
     flex-direction: column-reverse;
+    color: #FFFFFF;
 
 }
 
@@ -58,6 +71,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: #FFFFFF;
+
+
 }
 
 .forgotpassw {
@@ -69,4 +85,16 @@ body {
 .remeber {
     display: flex;
     justify-content: center;
+    color: #FFFFFF;
+    margin-right: 10px;
+
+}
+
+.register {
+    color: #FFFFFF;
+
+}
+
+.vinkje {
+    margin-top: -15px;
 }
