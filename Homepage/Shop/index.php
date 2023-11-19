@@ -19,10 +19,10 @@
             <div class="navbar">
                 <img src="../../logo.png" class="logo">
                 <ul>
-                    <li><a href="../Home/index.html">Home</a></li>
-                    <li><a href="../Shop/index.html">Shop</a></li>
-                    <li><a href="../OverOnsBryce/overonstest.html">Over ons</a>
-                    <li><a href="../Contact/contact.html">Contact</a></li>
+                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a href="../Shop/index.php">Shop</a></li>
+                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
+                    <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
             </div>
         </nav>
