@@ -1,0 +1,72 @@
+
+body {
+    background-image: url('achtergrondlogin.png'); /* Vervang 'achtergrondlogin.jpg' door het juiste pad naar je afbeeldingsbestand */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.loginbox {
+    background-color: rgba(255, 255, 255, 0.8); /* Achtergrondkleur met opaciteit voor het formulier */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+
+
+
+
+.afb1 {
+    width: 200px;
+    height: auto;
+    margin: auto auto auto auto;
+
+
+}
+
+.homepagelink {
+
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+.loginbox {
+
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid black;
+    margin-left: 35%;
+    margin-right: 35%;
+    background: #A54136;
+    background: rgba(165, 65, 54, 0.9);
+
+
+}
+
+.input-field {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column-reverse;
+
+}
+
+.forget {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.forgotpassw {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.remeber {
+    display: flex;
+    justify-content: center;
+}

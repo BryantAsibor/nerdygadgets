@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css";> <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Main CSS -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -37,7 +37,7 @@
             <h1>NERDYGADGETS</h1>
             <p>Where Ideas Become Reality</p>
             <div>
-                <button type="button"><span></span>LOG IN</button>
+                <a href="../LoginAnwish/index.html"> <button type="button"><span></span>LOG IN</button> </a>
                 <button type="button"><span></span>REGISTER</button>
             </div>
         </div>
@@ -49,7 +49,7 @@
     <div class="allproducts">
 
         </div>
-             <section class="product">
+            <section class="product">
             <img src="../img/iphone14black.png" alt="Product 1">
             <h2>Apple Iphone 14 Pro 128GB Black</h2>
             <div class="pricecontainer">
