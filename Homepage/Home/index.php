@@ -24,9 +24,9 @@
             <img src="logo.png" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="../Shop/index.html">Shop</a></li>
-                <li><a href="../OverOnsBryce/overonstest.html">Over ons</a>
-                <li><a href="../Contact/contact.html">Contact</a></li>
+                <li><a href="../Shop/index.php">Shop</a></li>
+                <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
+                <li><a href="../Contact/contact.php">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -49,7 +49,7 @@
     <div class="allproducts">
 
         </div>
-             <section class="product">
+            <section class="product">
             <img src="../img/iphone14black.png" alt="Product 1">
             <h2>Apple Iphone 14 Pro 128GB Black</h2>
             <div class="pricecontainer">
