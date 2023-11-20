@@ -8,7 +8,7 @@ $connection = mysqli_connect($host, $user_id, NULL, $database, "3306");
 // Ontvang het product-ID van de URL-parameter
 $productId = $_GET['id'];
 
-$sql = "SELECT name,price,image FROM nerdy_gadgets_start.product WHERE id = $productId";
+$sql = "SELECT name,price,image,description FROM nerdy_gadgets_start.product WHERE id = $productId";
 $result = mysqli_query($connection, $sql);
 
 if ($result && mysqli_num_rows($result) > 0) {
@@ -16,6 +16,7 @@ if ($result && mysqli_num_rows($result) > 0) {
     $productName = $product['name'];
     $productPrice = $product['price'];
     $productImage = $product['image'];
+    $productdescription = $product['description'];
 
     // Voeg andere productinformatie toe indien nodig
 } else {
@@ -60,13 +61,11 @@ mysqli_close($connection);
 </header>
 <main>
 <!-- Voeg de productinformatie toe aan de pagina -->
-<h1><?php echo $productName; ?></h1>
-<img src="../img/<?php echo $productImage; ?>.jpg" alt="<?php echo $productName; ?>">
-<p>Prijs: <?php echo $productPrice; ?>,-</p>
+    <img src="../img/<?php echo $productImage; ?>.jpg" alt="<?php echo $productName; ?>">
+    <h1><?php echo $productName; ?><br><br><br><br><br> Prijs: <?php echo $productPrice; ?>,-</h1>
+    <h5><?php echo $productdescription; ?></h5>
 
-<!-- Voeg andere informatie toe zoals beschrijving, specificaties, etc. -->
 
-<!-- Voeg een knop toe om het product toe te voegen aan de winkelwagen -->
 <button><i class="fa fa-shopping-cart"></i> Voeg toe aan winkelwagen</button>
 </main>
     <footer>
