@@ -39,7 +39,7 @@
                 <p>Remember me</p>
             </div>
             <div class="forgotpassw">
-            <a href="#">Forgot password?</a>
+                <a href="#">Forgot password?</a>
             </div>
 
         </div>
@@ -73,7 +73,7 @@
 
 <div class="homepagelink">
 
-      <a href="../Home/index.html" > Back to Homepage </a>
+    <a href="../Home/index.php" > Back to Homepage </a>
 </div>
 
 <!-- partial -->

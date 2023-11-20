@@ -23,7 +23,7 @@
         <div class="navbar">
             <img src="logo.png" class="logo">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="../Shop/index.php">Shop</a></li>
                 <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
                 <li><a href="../Contact/contact.php">Contact</a></li>
@@ -37,7 +37,7 @@
             <h1>NERDYGADGETS</h1>
             <p>Where Ideas Become Reality</p>
             <div>
-                <a href="../LoginAnwish/index.html"> <button type="button"><span></span>LOG IN</button> </a>
+                <a href="../LoginAnwish/index.php"> <button type="button"><span></span>LOG IN</button> </a>
                 <button type="button"><span></span>REGISTER</button>
             </div>
         </div>
