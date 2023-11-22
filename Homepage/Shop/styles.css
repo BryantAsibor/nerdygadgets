@@ -86,8 +86,18 @@ main {
     display: flex;
     flex-direction: row; /* Change the flex direction to "row" */
     justify-content: center;
+    max-height: calc(100vh - 200px); /* Adjust the value based on your footer height */
+    overflow-y: auto; /* Add a scrollbar if needed */
+    margin-bottom:0;
 }
-
+.product-group {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
 .product {
     border: 1px solid #ddd;
     border-radius: 3%;
@@ -150,9 +160,8 @@ style.css
     padding: 0;
 }
 
-footer{
+footer {
     position: absolute;
-    bottom: -100%;
     left: auto;
     right: 0;
     background: #111;
@@ -161,6 +170,7 @@ footer{
     font-family: "Open Sans";
     padding-top: 40px;
     color: #fff;
+    margin-top: 0;
 }
 .footer-content{
     display: flex;
