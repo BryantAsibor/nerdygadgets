@@ -10,37 +10,6 @@
 
     <!-- Stylesheet footer icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-    <style>
-        /* Voeg stijl toe aan de sorteer knoppen */
-        .sort-buttons {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        .sort-button {
-            background: #3498db; /* Aangepaste kleur - blauw */
-            color: white;
-            border: none;
-            padding: 4px 12px; /* Behoud de breedte, verklein alleen de hoogte (5 keer kleiner) */
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px; /* Behoud de tekstgrootte */
-            margin: 180px 2px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        .sort-button:hover {
-            background-color: #2980b9; /* Donkere kleur bij hover */
-        }
-
-        .sort-button.active {
-            background-color: #e74c3c; /* Aangepaste kleur - rood voor de actieve knop */
-        }
-    </style>
 </head>
 
 <body>
@@ -108,9 +77,9 @@
     while ($row = mysqli_fetch_assoc($result)) {
         echo '<section class="product"> 
            <img src="../img/' . $row["image"] . '.jpg" alt="Product 1">
-           <h2>' . $row["name"] . '</h2>
+           <h3>' . $row["name"] . '</h3>
            <div class="pricecontainer">
-               <h3>' . $row["price"] . ',-</h3>
+               <h4>' . $row["price"] . ',-</h4>
                <a href="product.php?id='.$row["id"].'"><button><i class="fa fa-shopping-cart"></i></button></a>
            </div>
        </section>';
