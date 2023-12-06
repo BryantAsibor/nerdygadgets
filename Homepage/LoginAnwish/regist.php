@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         echo "Fout bij toevoegen van het record: " . mysqli_error($con);
     }
 
-    header("Location: index.php");
+    header("Location: Login.php");
     die;
 
 }
@@ -75,7 +75,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
             </div>
             <button type="submit" name="submit">Submit</button>
         </div>
-        <p>Heb je al een account? <a href="index.php">Log in</a></p>
+        <p>Heb je al een account? <a href="Login.php">Log in</a></p>
     </form>
 
 

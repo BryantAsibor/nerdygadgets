@@ -1,10 +1,41 @@
 <?php
 session_start();
 
+
 include("../includes/connection.php");
 include("../includes/functions.php");
 
+if($_SERVER['REQUEST_METHOD'] == "POST") {
+    //somthing was posted
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $first_name = $_POST["first_name"];
 
+// read from db
+    $query = "select * from nerdy_gadgets_start.user where email = '$email' limit 1";
+
+    $result = mysqli_query($con, $query);
+
+    if ($result) {
+        if ($result && mysqli_num_rows($result) > 0) {
+            $user_data = mysqli_fetch_assoc($result);
+
+
+            if ($user_data['password'] === $password) {
+
+
+                $_SESSION["email"] = $user_data['user_id'];
+                header("Location: regist.php");
+                die;
+            }
+        }
+
+    } else {
+        echo "Enter valid information!";
+
+    }
+
+}
 ?>
 
 
@@ -34,14 +65,14 @@ include("../includes/functions.php");
 
 <body>
 <div class="loginbox">
-    <form action="#">
+    <form action="" method="post">
 
         <div class="input-field">
-            <input type="text" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
             <label>Enter your email:</label>
         </div>
         <div class="input-field">
-            <input type="password" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <label>Enter your password:</label>
         </div>
 
@@ -66,6 +97,7 @@ include("../includes/functions.php");
             <p>Don't have an account? <a href="regis.html">Register</a></p>
         </div>
     </form>
+
 </div>
 
 
