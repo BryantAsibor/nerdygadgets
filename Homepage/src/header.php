@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles.css";> <!-- Main CSS -->
+<link rel="stylesheet" href="styles.css" > <!-- Main CSS -->
 
 <div class="header">
     <nav>

@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+include("../includes/connection.php");
+include("../includes/functions.php");
+
+$user_data = check_login($con);
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,33 +29,9 @@
 </head>
 <body>
 
-<header>
-
-<div class="navigation">
-    <nav>
-        <div class="navbar">
-            <img src="logo.png" class="logo">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="../Shop/index.php">Shop</a></li>
-                <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
-                <li><a href="../Contact/contact.php">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-</div>
-
-        <div class="content">
-            <h1>NERDYGADGETS</h1>
-            <p>Where Ideas Become Reality</p>
-            <div>
-                <a href="../LoginAnwish/index.php"> <button type="button"><span></span>LOG IN</button> </a>
-                <button type="button"><span></span>REGISTER</button>
-            </div>
-        </div>
-
-</header>
+<?php
+include_once '../src/header.php'
+?>
 
 <main>
 
@@ -79,21 +68,9 @@
     </div>
 </main>
 
-<footer>
-    <div class="footer-content">
-        <h3>NerdyGadgets</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
-        <ul class="socials">
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>copyright &copy;2023 . designed by NerdyGadgets </p>
-    </div>
-
-</footer>
+<?php
+include_once '../src/footer.php'
+?>
 
 </body>
 </html>

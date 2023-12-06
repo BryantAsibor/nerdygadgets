@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+include("../includes/connection.php");
+include("../includes/functions.php");
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -13,13 +23,14 @@
 
 
 <div class="afb1">
-    <img src="/logo.png" class="afb1">
+    <img src="/Homepage/src/logo.png" class="afb1">
 
 </div>
 
 <div class="login">
     <p>Log in</p>
 </div>
+
 
 <body>
 <div class="loginbox">
