@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 
 include("../includes/connection.php");
@@ -9,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     //somthing was posted
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $first_name = $_POST["first_name"];
+
 
 // read from db
     $query = "select * from nerdy_gadgets_start.user where email = '$email' limit 1";
@@ -25,18 +24,21 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
                 $_SESSION["email"] = $user_data['user_id'];
-                header("Location: regist.php");
+                header("Location: http://localhost:63342/Shop.html/Homepage/Home/index.php?_ijt=6ptdig7gouiens1gu32njoh3f5&_ij_reload=RELOAD_ON_SAVE");
                 die;
             }
         }
 
     } else {
-        echo "Enter valid information!";
+        echo "Please enter valid information!";
 
     }
 
-}
+} else {echo "Please enter valid information!";}
 ?>
+
+
+
 
 
 <!DOCTYPE html>
@@ -94,7 +96,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
         <button type="submit">Log In</button>
         <div class="register">
-            <p>Don't have an account? <a href="regis.html">Register</a></p>
+            <p>Don't have an account? <a href="regist.php">Register</a></p>
         </div>
     </form>
 

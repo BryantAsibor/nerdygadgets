@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css";> <!-- Main CSS -->
+    <link rel="stylesheet" href="../src/styles.css"> <!-- Main CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Stylesheet footer icons -->
 
     <title>Voorpagina</title>
@@ -12,23 +13,7 @@
 </head>
 <body>
 
-<header>
-    <div class="header">
-        <nav>
-            <div class="navbar">
-                <img src="../img/logo.png" class="logo">
-                <ul>
-                    <li><a href="../Home/index.php">Home</a></li>
-                    <li><a href="../Shop/index.php">Shop</a></li>
-                    <li> <a href="../OverOnsBryce/overonstest.php">Over ons</a>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-</header>
-
+<?php include("../src/header.php"); ?>
 <div class="container">
 
     <div class="content">

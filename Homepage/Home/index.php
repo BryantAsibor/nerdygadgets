@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 include("../includes/connection.php");
 include("../includes/functions.php");
@@ -8,7 +8,13 @@ $user_data = check_login($con);
 ?>
 
 
+<?php
 
+
+?>
+
+
+<?php include("../src/header.php"); ?>
 
 
 <!DOCTYPE html>
@@ -16,7 +22,7 @@ $user_data = check_login($con);
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="../src/styles.css">
     <link rel="stylesheet" href="style.css"> <!-- Main CSS -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,9 +35,7 @@ $user_data = check_login($con);
 </head>
 <body>
 
-<?php
-include_once '../src/header.php'
-?>
+
 
 <main>
 
@@ -68,11 +72,18 @@ include_once '../src/header.php'
     </div>
 </main>
 
-<?php
-include_once '../src/footer.php'
-?>
+
 
 </body>
 </html>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+<?php include("../src/footer.php"); ?>
