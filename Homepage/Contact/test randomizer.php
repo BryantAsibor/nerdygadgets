@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Title of the document</title>
+</head>
+
+<body>
+<form name="rn">
+
+    <input type="button" value="Contact" onclick="Random();" />
+</form>
+</body>
+<script>
+    function Random() {
+        var rnd = Math.floor(Math.random() * 4);
+        if (rnd == 1) {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        } else if ( rnd == 2) {
+            window.location.href = 'https://www.google.com';
+        } else if ( rnd == 3) {
+            window.location.href = 'https://cat-bounce.com/'
+
+        } else {
+            window.location.href = 'https://pointerpointer.com/';
+        }
+    }
+</script>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 

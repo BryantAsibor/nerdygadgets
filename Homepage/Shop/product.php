@@ -27,6 +27,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 // Sluit de databaseverbinding
 mysqli_close($connection);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -79,8 +79,10 @@
            <img src="../img/' . $row["image"] . '.jpg" alt="Product 1">
            <h3>' . $row["name"] . '</h3>
            <div class="pricecontainer">
+           <form action="add.php" method="post">
                <h4>' . $row["price"] . ',-</h4>
-               <a href="product.php?id='.$row["id"].'"><button><i class="fa fa-shopping-cart"></i></button></a>
+               <a href="product.php?id='.$row["id"].'" ><button name="buy"><i class="fa fa-shopping-cart"></i></button></a>
+               </form>
            </div>
        </section>';
 

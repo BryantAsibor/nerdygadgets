@@ -13,10 +13,15 @@
     <div id="root"></div>
     <div class="sidebar">
         <div class="head"><p>My Cart</p></div>
-        <div id="cartItem">Your cart is empty</div>
+        <div id="cartItem">Winkelmand is leeg</div>
+        <?php
+        if (isset($_COOKIE['cart'])) {
+
+        }
+        ?>
         <div class="foot">
             <h3>Total</h3>
-            <h2 id="total">$ 0.00</h2>
+            <h2 id="total">&euro; 0.00</h2>
         </div>
     </div>
 </div>

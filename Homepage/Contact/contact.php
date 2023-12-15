@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +36,11 @@
         <h1>CONTACT US</h1>
         <p>Not everything is perfectly clear.</p>
         <div>
-            <button type="button"><span></span>E-MAIL</button>
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <button type="button"><span></span>E-MAIL</button>
+            </a>
+
             <button type="button"><span></span>PHONE</button>
         </div>
     </div>
