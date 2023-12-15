@@ -60,8 +60,9 @@
 
     // Aangepaste query voor de "Meest populair" sorteeroptie
     if (isset($_GET['sort']) && ($_GET['sort'] == 'quantity_desc' || $_GET['sort'] == 'quantity_asc')) {
-        $qu; $sql = "SELECT product.id, product.name, product.price, product.image, COUNT(order_item.product_id) as popularity
-            FROM nerdy_gadgets_start.product
+        $quantitySortOrder = ($_GET['sort'] == 'quantity_desc') ? 'desc' : 'asc';
+         $sql = "SELECT product.id, product.name, product.price, product.image, COUNT(order_item.product_id) as popularity
+           FROM nerdy_gadgets_start.product
             LEFT JOIN nerdy_gadgets_start.order_item ON product.id = order_item.product_id
             GROUP BY product.id, product.name, product.price, product.image
             ORDER BY popularity $quantitySortOrder";
