@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+include("../includes/connection.php");
+include("../includes/functions.php");
+
+$user_data = check_login($con);
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +30,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <header>
 
     <div class="navigation">
@@ -67,6 +81,11 @@
 </div>
 
 </header>
+=======
+<?php
+include_once '../src/header.php'
+?>
+>>>>>>> b2fd7a0d1286519c012d12fd3d84d652e2834038
 
 <main>
 
@@ -103,21 +122,9 @@
     </div>
 </main>
 
-<footer>
-    <div class="footer-content">
-        <h3>NerdyGadgets</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
-        <ul class="socials">
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>copyright &copy;2023 . designed by NerdyGadgets </p>
-    </div>
-
-</footer>
+<?php
+include_once '../src/footer.php'
+?>
 
 </body>
 </html>

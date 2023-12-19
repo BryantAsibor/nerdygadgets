@@ -19,7 +19,7 @@
     <div class="header">
         <nav>
             <div class="navbar">
-                <img src="../../logo.png" class="logo">
+                <img src="../src/logo.png" class="logo">
                 <ul>
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
@@ -61,12 +61,13 @@
     // Aangepaste query voor de "Meest populair" sorteeroptie
     if (isset($_GET['sort']) && ($_GET['sort'] == 'quantity_desc' || $_GET['sort'] == 'quantity_asc')) {
         $quantitySortOrder = ($_GET['sort'] == 'quantity_desc') ? 'desc' : 'asc';
-        $sql = "SELECT product.id, product.name, product.price, product.image, COUNT(order_item.product_id) as popularity
-            FROM nerdy_gadgets_start.product
+         $sql = "SELECT product.id, product.name, product.price, product.image, COUNT(order_item.product_id) as popularity
+           FROM nerdy_gadgets_start.product
             LEFT JOIN nerdy_gadgets_start.order_item ON product.id = order_item.product_id
             GROUP BY product.id, product.name, product.price, product.image
             ORDER BY popularity $quantitySortOrder";
-    } else {
+    } else {$quantitySortOrder = ($_GET['sort'] == 'quantity_desc') ? 'desc' : 'asc';
+
         // Standaard query voor andere sorteeropties
         $sql = "SELECT id, name, price, image FROM nerdy_gadgets_start.product ORDER BY price $sortOrder";
     }

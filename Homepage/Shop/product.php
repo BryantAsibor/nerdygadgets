@@ -49,7 +49,7 @@ mysqli_close($connection);
     <div class="header">
         <nav>
             <div class="navbar">
-                <img src="../../logo.png" class="logo">
+                <img src="../src/logo.png" class="logo">
                 <ul>
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>

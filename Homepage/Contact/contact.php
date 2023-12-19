@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Stylesheet footer icons -->
 
     <title>Voorpagina</title>
-
 </head>
 <body>
 
@@ -22,7 +21,7 @@
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
                     <li> <a href="../OverOnsBryce/overonstest.php">Over ons</a>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,22 +31,48 @@
 
 <div class="container">
 
-    <div class="content">
+    <?php
+    $d=2;
+
+    if ($d==2){
+      print("<div class=\"content\">
+        <h1>CON<a href=\"TicTacToe.php\">TAC</a>T US</h1>
+        <p>Not everything is perfectly clear.</p>
+        <div>
+            <button type=\"button\"><span></span>E-MAIL</button>
+            <button type=\"button\"><span></span>PHONE</button>
+        </div>
+    </div>");}
+    elseif($d==1){
+        print("<div class=\"content\">
         <h1>CONTACT US</h1>
         <p>Not everything is perfectly clear.</p>
         <div>
+<<<<<<< HEAD
 
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                 <button type="button"><span></span>E-MAIL</button>
             </a>
 
             <button type="button"><span></span>PHONE</button>
+=======
+            <button type=\"button\"><span></span>E-MAIL</button>
+            <button type=\"button\"><span></span>PHONE</button>
+>>>>>>> b2fd7a0d1286519c012d12fd3d84d652e2834038
         </div>
-    </div>
-
-
+    </div>");
+    }
+    ?>
+    <script>
+        var one
+        function click1(){
+            one = one + 1;
+        }
+        if (one == 3){
+            document.write("TicTacToe.php")
+        }
+    </script>
 </div>
-
 <footer>
     <div class="footer-content">
         <h3>NerdyGadgets</h3>
@@ -66,5 +91,3 @@
 
 </body>
 </html>
-
-
