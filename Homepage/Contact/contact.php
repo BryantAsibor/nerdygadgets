@@ -50,11 +50,11 @@
         <div>
 <<<<<<< HEAD
 
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <button type="button"><span></span>E-MAIL</button>
+            <a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\">
+                <button type=\"button\"><span></span>E-MAIL</button>
             </a>
 
-            <button type="button"><span></span>PHONE</button>
+            <button type=\"button\"><span></span>PHONE</button>
 =======
             <button type=\"button\"><span></span>E-MAIL</button>
             <button type=\"button\"><span></span>PHONE</button>
@@ -63,15 +63,6 @@
     </div>");
     }
     ?>
-    <script>
-        var one
-        function click1(){
-            one = one + 1;
-        }
-        if (one == 3){
-            document.write("TicTacToe.php")
-        }
-    </script>
 </div>
 <footer>
     <div class="footer-content">
