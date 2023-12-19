@@ -21,7 +21,7 @@
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
                     <li> <a href="../OverOnsBryce/overonstest.php">Over ons</a>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
             </div>
         </nav>

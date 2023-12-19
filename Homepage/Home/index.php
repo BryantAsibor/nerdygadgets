@@ -6,11 +6,6 @@ include("../includes/functions.php");
 
 $user_data = check_login($con);
 ?>
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +26,7 @@ $user_data = check_login($con);
 <body>
 
 <<<<<<< HEAD
+
 <header>
 
     <div class="navigation">
@@ -40,9 +36,12 @@ $user_data = check_login($con);
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
-                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
-                        <input type="button" value="Contact" onclick="Random();" />
-                        </form>
+                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a></li>
+                    <li><input type="button" value="Contact" onclick="Random();" /></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </body>
 <script>
     function Random() {
@@ -50,7 +49,7 @@ $user_data = check_login($con);
         if (rnd == 1) {
             window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
         } else if ( rnd == 2) {
-            window.location.href = 'http://localhost:63342/Shop.html/Homepage/Contact/contact.php';
+            window.location.href = 'http://localhost:63342/index.php/Homepage/Contact/contact.php';
         } else if ( rnd == 3) {
             window.location.href = 'https://cat-bounce.com/'
 
@@ -81,11 +80,6 @@ $user_data = check_login($con);
 </div>
 
 </header>
-=======
-<?php
-include_once '../src/header.php'
-?>
->>>>>>> b2fd7a0d1286519c012d12fd3d84d652e2834038
 
 <main>
 
