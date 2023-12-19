@@ -36,8 +36,8 @@
 
     if ($d==2){
       print("<div class=\"content\">
-        <h1>CON<a href=\"TicTacToe.php\">TAC</a>T US</h1>
-        <p>Not everything is perfectly clear.</p>
+        <h1>CON<a href=\"TicTacToe.php\">TAC</a>T ONS</h1>
+        <p>Vragen stellen mag altijd.</p>
         <div>
             <button type=\"button\"><span></span>E-MAIL</button>
             <button type=\"button\"><span></span>PHONE</button>
@@ -45,8 +45,8 @@
     </div>");}
     elseif($d==1){
         print("<div class=\"content\">
-        <h1>CONTACT US</h1>
-        <p>Not everything is perfectly clear.</p>
+        <h1>CONTACT ONS</h1>
+        <p>Vragen stellen mag altijd..</p>
         <div>
 <<<<<<< HEAD
 
