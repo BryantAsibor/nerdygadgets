@@ -271,5 +271,9 @@ footer{
     word-spacing: 2px;
     text-transform: capitalize;
 }
-
-
+.balls {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}

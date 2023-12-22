@@ -37,7 +37,7 @@ $user_data = check_login($con);
                     <li><a href="index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
                     <li><a href="../OverOnsBryce/overonstest.php">Over ons</a></li>
-                    <li><input type="button" value="Contact" onclick="Random();" /></li>
+                    <li><input type="button" value="Contact" onclick="Random();" class="balls" /></li>
                 </ul>
             </div>
         </nav>
@@ -49,7 +49,7 @@ $user_data = check_login($con);
         if (rnd == 1) {
             window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
         } else if ( rnd == 2) {
-            window.location.href = 'http://localhost:63342/index.php/Homepage/Contact/contact.php';
+            window.location.href = 'http://localhost:63342/index.php/Homepage/Contact/contact.php?_ijt=9c86vbo6jui3ffbprdbbvsb0p2&_ij_reload=RELOAD_ON_SAVE';
         } else if ( rnd == 3) {
             window.location.href = 'https://cat-bounce.com/'
 
