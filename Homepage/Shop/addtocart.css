@@ -1,31 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    font-size: 18px;
-}
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.header{
-    height: 80px;
-    width: 70%;
-    background-color: black;
-    border-radius: 3px;
-    margin: 30px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-}
-.header .logo{
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*    font-family: 'poppins', sans-serif;*/
+/*    font-size: 18px;*/
+/*}*/
+/*body{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*}*/
+/*.header{*/
+/*    height: 80px;*/
+/*    width: 70%;*/
+/*    background-color: black;*/
+/*    border-radius: 3px;*/
+/*    margin: 30px 0px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    padding: 15px;*/
+/*}*/
+/*.header .logo{*/
+/*    font-size: 30px;*/
+/*    font-weight: bold;*/
+/*    color: hotpink;*/
 }
 .cart{
     display: flex;
@@ -33,11 +33,11 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 7px 10px;
-    border-radius: 3px;
+    border-radius: 50px;
     width: 80px;
 }
 .fa-solid{
-    color: black;
+    color: red;
 }
 .cart p{
     height: 22px;
@@ -46,7 +46,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    background-color: black;
+    background-color: red;
     color: white;
 }
 .container{
