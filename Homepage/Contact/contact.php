@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
                     <li> <a href="../OverOnsBryce/overonstest.php">Over ons</a>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,8 +36,8 @@
 
     if ($d==2){
       print("<div class=\"content\">
-        <h1>CON<a href=\"TicTacToe.php\">TAC</a>T US</h1>
-        <p>Not everything is perfectly clear.</p>
+        <h1>CON<a href=\"TicTacToe.php\">TAC</a>T ONS</h1>
+        <p>Vragen stellen mag altijd.</p>
         <div>
             <button type=\"button\"><span></span>E-MAIL</button>
             <button type=\"button\"><span></span>PHONE</button>
@@ -44,24 +45,24 @@
     </div>");}
     elseif($d==1){
         print("<div class=\"content\">
-        <h1>CONTACT US</h1>
-        <p>Not everything is perfectly clear.</p>
+        <h1>CONTACT ONS</h1>
+        <p>Vragen stellen mag altijd..</p>
         <div>
+<<<<<<< HEAD
+
+            <a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\">
+                <button type=\"button\"><span></span>E-MAIL</button>
+            </a>
+
+            <button type=\"button\"><span></span>PHONE</button>
+=======
             <button type=\"button\"><span></span>E-MAIL</button>
             <button type=\"button\"><span></span>PHONE</button>
+>>>>>>> b2fd7a0d1286519c012d12fd3d84d652e2834038
         </div>
     </div>");
     }
     ?>
-    <script>
-        var one
-        function click1(){
-            one = one + 1;
-        }
-        if (one == 3){
-            document.write("TicTacToe.php")
-        }
-    </script>
 </div>
 <footer>
     <div class="footer-content">

@@ -1,11 +1,33 @@
-<?php
-session_start();
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
 
-include("../includes/connection.php");
-include("../includes/functions.php");
+<body>
+<form name="rn">
 
-$user_data = check_login($con);
-?>
+    <input type="button" value="Contact" onclick="Random();" />
+</form>
+</body>
+<script>
+    function Random() {
+        var rnd = Math.floor(Math.random() * 4);
+        if (rnd == 1) {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        } else if ( rnd == 2) {
+            window.location.href = 'https://www.google.com';
+        } else if ( rnd == 3) {
+            window.location.href = 'https://cat-bounce.com/'
+
+        } else {
+            window.location.href = 'https://pointerpointer.com/';
+        }
+    }
+</script>
+
+</html>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,8 +47,6 @@ $user_data = check_login($con);
 </head>
 <body>
 
-<<<<<<< HEAD
-
 <header>
 
     <div class="navigation">
@@ -36,12 +56,9 @@ $user_data = check_login($con);
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
-                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a></li>
-                    <li><input type="button" value="Contact" onclick="Random();" class="balls" /></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
+                        <input type="button" value="Contact" onclick="Random();" />
+                        </form>
 </body>
 <script>
     function Random() {
@@ -49,7 +66,7 @@ $user_data = check_login($con);
         if (rnd == 1) {
             window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
         } else if ( rnd == 2) {
-            window.location.href = 'http://localhost:63342/index.php/Homepage/Contact/contact.php?_ijt=9c86vbo6jui3ffbprdbbvsb0p2&_ij_reload=RELOAD_ON_SAVE';
+            window.location.href = 'http://localhost:63342/Shop.html/Homepage/Contact/contact.php';
         } else if ( rnd == 3) {
             window.location.href = 'https://cat-bounce.com/'
 
@@ -116,9 +133,21 @@ $user_data = check_login($con);
     </div>
 </main>
 
-<?php
-include_once '../src/footer.php'
-?>
+<footer>
+    <div class="footer-content">
+        <h3>NerdyGadgets</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 . designed by NerdyGadgets </p>
+    </div>
+
+</footer>
 
 </body>
 </html>

@@ -7,16 +7,22 @@
 <body>
 <div class="header">
     <p class="logo">NERDYGADGETS</p>
-    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+        <p id="count">0</p></div>
 </div>
 <div class="container">
     <div id="root"></div>
     <div class="sidebar">
-        <div class="head"><p>My Cart</p></div>
-        <div id="cartItem">Your cart is empty</div>
+        <div class="head"><p>Winkelwagen</p></div>
+        <div id="cartItem">Winkelmand is leeg</div>
+        <?php
+        if (isset($_COOKIE['cart'])) {
+
+        }
+        ?>
         <div class="foot">
             <h3>Total</h3>
-            <h2 id="total">$ 0.00</h2>
+            <h2 id="total">&euro; 0.00</h2>
         </div>
     </div>
 </div>
