@@ -19,7 +19,13 @@ body{
 }
 
 .container{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    text-align: center;
 }
 
 /*Achtergrond van voorpagina*/

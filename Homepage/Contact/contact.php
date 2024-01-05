@@ -5,29 +5,64 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css";> <!-- Main CSS -->
-    <link rel="stylesheet" href="../src/styles.css"> <!-- Main CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Stylesheet footer icons -->
 
     <title>Voorpagina</title>
-
 </head>
 <body>
 
-<?php include("../src/header.php"); ?>
+<header>
+    <div class="header">
+        <nav>
+            <div class="navbar">
+                <img src="../img/logo.png" class="logo">
+                <ul>
+                    <li><a href="../Home/index.php">Home</a></li>
+                    <li><a href="../Shop/index.php">Shop</a></li>
+                    <li> <a href="../OverOnsBryce/overonstest.php">Over ons</a>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
 <div class="container">
 
-    <div class="content">
+    <?php
+    $d=2;
+
+    if ($d==2){
+      print("<div class=\"content\">
+        <h1>CON<a href=\"TicTacToe.php\">TAC</a>T US</h1>
+        <p>Not everything is perfectly clear.</p>
+        <div>
+            <button type=\"button\"><span></span>E-MAIL</button>
+            <button type=\"button\"><span></span>PHONE</button>
+        </div>
+    </div>");}
+    elseif($d==1){
+        print("<div class=\"content\">
         <h1>CONTACT US</h1>
         <p>Not everything is perfectly clear.</p>
         <div>
-            <button type="button"><span></span>E-MAIL</button>
-            <button type="button"><span></span>PHONE</button>
+            <button type=\"button\"><span></span>E-MAIL</button>
+            <button type=\"button\"><span></span>PHONE</button>
         </div>
-    </div>
-
-
+    </div>");
+    }
+    ?>
+    <script>
+        var one
+        function click1(){
+            one = one + 1;
+        }
+        if (one == 3){
+            document.write("TicTacToe.php")
+        }
+    </script>
 </div>
-
 <footer>
     <div class="footer-content">
         <h3>NerdyGadgets</h3>
@@ -46,5 +81,3 @@
 
 </body>
 </html>
-
-
