@@ -134,8 +134,8 @@ $result = mysqli_query($connection, $sql);
                 ?>
                 <div class="col-2 product">
                     <div class="row">
-                        <img src="../img/<?php print($row["image"]) ?>.jpg" alt="Product 1"
-                             style="width: auto; height: 120px; margin: auto">
+                       <a href="product.php?id=<?php print($row["id"])?>"><img src="../img/<?php print($row["image"]) ?>.jpg" alt="Product 1"
+                                                  style="width: auto; height: 120px; margin: auto"></a>
                     </div>
                     <div class="row" style="margin-top: 50px">
                         <p><?php print($row["name"]) ?></p>
