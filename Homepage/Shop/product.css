@@ -432,6 +432,10 @@ button:hover {
     height: auto;
 }
 
+.seachbar{
+    margin-right:400px;
+}
+
 .product-details {
     text-align: center;
     margin-top: 250px;

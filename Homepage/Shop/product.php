@@ -87,6 +87,9 @@ mysqli_close($connection);
                     <li><a href="../OverOnsBryce/overonstest.php">Over ons</a></li>
                     <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
+                <div class="seachbar">
+                <input type="sumbit" placeholder="Search..">
+                </div>
                 <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
             </div>
         </nav>
