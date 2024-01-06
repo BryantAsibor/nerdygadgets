@@ -16,13 +16,14 @@
     <div class="header">
         <nav>
             <div class="navbar">
-                <img src="../Home/logo.png" class="logo">
+                <img src="logo.png" class="logo" id="clickCounter">
                 <ul>
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
-                    <li> <a href="../OverOnsBryce/overonstest.php">Over ons</a>
+                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
                     <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
+                <a href="../LoginAnwish/Login.php"> <img src="b64f8fcf0e0aed9537c800eb5e9ca1ed.png" class="pfp"></a>
             </div>
         </nav>
     </div>
@@ -61,3 +62,19 @@
 
 </body>
 </html>
+
+<script>
+    // JavaScript om de klik te verwerken
+    var clickCount = 0;
+
+    document.getElementById('clickCounter').addEventListener('click', function() {
+        // Verhoog het aantal klikken
+        clickCount++;
+
+        // Controleer of het vereiste aantal klikken is bereikt (in dit geval 4)
+        if (clickCount >= 4) {
+            // Stuur door naar test.php als het vereiste aantal klikken is bereikt
+            window.location.href = '../easteregg anwish/easteregganwish.php';
+        }
+    });
+</script>

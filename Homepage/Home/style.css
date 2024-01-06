@@ -40,6 +40,19 @@ header {
 
 
 }
+.pfp {
+    position: absolute;
+    margin-left: 80%;
+    margin-right: auto;
+    margin-top: -40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    z-index: 17;
+
+}
 
 .navbar{
     width: 100%;

@@ -29,23 +29,23 @@ $user_data = check_login($con);
 
 <header>
 
-    <div class="navigation">
+    <div class="header">
         <nav>
             <div class="navbar">
-                <img src="logo.png" class="logo">
+                <img src="logo.png" class="logo" id="clickCounter">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
-                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a></li>
-                    <li><input type="button" value="Contact" onclick="Random();" class="balls" /></li>
+                    <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
+                    <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
+                <a href="../LoginAnwish/Login.php"> <img src="b64f8fcf0e0aed9537c800eb5e9ca1ed.png" class="pfp"></a>
             </div>
         </nav>
     </div>
-</body>
 <script>
     function Random() {
-        var rnd = Math.floor(Math.random() * 4);
+        var rnd = Math.floor(Math.random() * 3);
         if (rnd == 1) {
             window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
         } else if ( rnd == 2) {
@@ -58,7 +58,21 @@ $user_data = check_login($con);
         }
     }
 </script>
+<script>
+    // JavaScript om de klik te verwerken
+    var clickCount = 0;
 
+    document.getElementById('clickCounter').addEventListener('click', function() {
+        // Verhoog het aantal klikken
+        clickCount++;
+
+        // Controleer of het vereiste aantal klikken is bereikt (in dit geval 4)
+        if (clickCount >= 4) {
+            // Stuur door naar test.php als het vereiste aantal klikken is bereikt
+            window.location.href = '../easteregg anwish/easteregganwish.php';
+        }
+    });
+</script>
 
 
 
@@ -74,9 +88,8 @@ $user_data = check_login($con);
     <h1>NERDYGADGETS</h1>
     <p>Where Ideas Become Reality</p>
     <div>
-        <a href="../LoginAnwish/index.php"> <button type="button"><span></span>LOG IN</button> </a>
-        <button type="button"><span></span>REGISTER</button>
-    </div>
+        <a href="../LoginAnwish/Login.php"> <button type="button"><span></span>LOG IN</button> </a>
+        <a href="../LoginAnwish/regist.php"> <button type="button"><span></span>REGISTER</button> </a>    </div>
 </div>
 
 </header>

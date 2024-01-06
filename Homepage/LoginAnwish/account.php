@@ -3,15 +3,16 @@
 include("../includes/connection.php");
 include("../includes/functions.php");
 
-$user_data = check_login($con);
 
-if (!$user_data) {
-    // Als de gebruiker niet is ingelogd, stuur ze naar het inlogscherm
-    header("Location: Login.php");
-    exit;
+session_start(); // Zorg ervoor dat je sessie start aan het begin van je script
+
+// Controleer of de gebruiker al is ingelogd
+if (isset($_SESSION["email"])) {
+    // Als de gebruiker al is ingelogd, stuur hem dan door naar de homepage
+    header("Location: http://localhost:63342/Shop.html/Homepage/Home/index.php?_ijt=6ptdig7gouiens1gu32njoh3f5&_ij_reload=RELOAD_ON_SAVE");
+    die;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,22 +21,17 @@ if (!$user_data) {
 </head>
 <body>
 <h1>Account info:</h1>
-<?php
-// Hier kun je de gegevens van de ingelogde gebruiker weergeven
-if ($user_data) {
-    echo "Welcome, " . $user_data['username'] . "!"; // Pas dit aan op basis van je databasekolommen
-} else {
-    echo "Error: Unable to retrieve account information.";
-}
-?>
 
 <!-- Voeg hier de rest van je HTML-inhoud toe -->
 </body>
 </html>
+<div class="logout-form">
+    <form action="logout.php" method="post">
+        <button type="submit" class="logout-button">Logout</button>
+    </form>
+</div>
 
-?>
 
-<h1> Account info:</h1>
 
 
 

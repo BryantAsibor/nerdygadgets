@@ -16,7 +16,7 @@
                 <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
                 <li><a href="../Contact/contact.php">Contact</a></li>
             </ul>
-            <a href="../LoginAnwish/account.php"> <img src="b64f8fcf0e0aed9537c800eb5e9ca1ed.png" class="pfp"></a>
+            <a href="../LoginAnwish/Login.php"> <img src="b64f8fcf0e0aed9537c800eb5e9ca1ed.png" class="pfp"></a>
         </div>
     </nav>
 </div>
