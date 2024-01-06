@@ -66,7 +66,7 @@ mysqli_close($connection);
     <!-- Voeg andere metatags en stylesheets toe indien nodig -->
     <meta charset="UTF-8">
     <title>Product Details</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="product.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -94,14 +94,23 @@ mysqli_close($connection);
 </header>
 
 <main>
-    <!-- Voeg de productinformatie toe aan de pagina -->
+    <div class="product">
+        <div class="img-container">
     <img src="../img/<?php echo $productImage; ?>.jpg" alt="<?php echo $productName; ?>">
-    <h1><?php echo $productName; ?><br><br><br><br><br> Prijs: <?php echo $productPrice; ?>,-</h1>
+            <h1><?php echo $productName; ?></h1>
+    </div>
+    </div>
+<div class="product-details">
+     Prijs: <?php echo $productPrice; ?>,-</h1>
     <h5><?php echo $productdescription; ?></h5>
+</div>
 
+
+<div class="pricecontainer">
     <button onclick="addToCart(<?php echo $productId; ?>, '<?php echo $productName; ?>', '<?php echo $productPrice; ?>')">
         <i class="fa fa-shopping-cart"></i> Voeg toe aan winkelwagen
     </button>
+</div>
 </main>
 
 <div class="container">
@@ -124,5 +133,18 @@ mysqli_close($connection);
 <script src="addtocart.js"></script>
 
 </body>
-
+<footer>
+    <div class="footer-content">
+        <h3>NerdyGadgets</h3>
+        <p>NerdyGadgets</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 . designed by NerdyGadgets <span>nethunt</span></p>
+    </div>
+</footer>
 </html>
