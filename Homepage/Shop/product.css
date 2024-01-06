@@ -1,26 +1,22 @@
 /* styles.css */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
-
 }
-
-
 
 a {
     text-decoration: none;
     color: black;
 }
 
-
-
-/*Achtergrond van voorpagina*/
-header{
+/* Achtergrond van voorpagina */
+header {
     background: #000;
     width: 100%;
 }
+
 .pfp {
     position: absolute;
     margin-left: 80%;
@@ -32,15 +28,14 @@ header{
     width: 80px;
     cursor: pointer;
     z-index: 17;
-
 }
 
-.header{
+.header {
     padding: 0 5%;
     position: sticky;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     margin: auto;
     padding: 0px 0;
@@ -49,7 +44,7 @@ header{
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -67,20 +62,20 @@ header{
     margin-top: 0px;
 }
 
-.navbar ul li{
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 50px 30px;
     position: relative;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
 }
 
-.navbar ul li::after{
+.navbar ul li::after {
     content: '';
     height: 3px;
     width: 0;
@@ -91,20 +86,20 @@ header{
     transition: 0.5s;
 }
 
-.navbar ul li:hover::after{
+.navbar ul li:hover::after {
     width: 100%;
 }
 
-/*Products*/
-
+/* Products */
 main {
     display: flex;
-    flex-direction: row; /* Change the flex direction to "row" */
+    flex-direction: row;
     justify-content: center;
-    max-height: calc(100vh - 200px); /* Adjust the value based on your footer height */
-    overflow-y: auto; /* Add a scrollbar if needed */
-    margin-bottom:0;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    margin-bottom: 0;
 }
+
 .product-group {
     margin: 0;
     padding: 0;
@@ -113,42 +108,29 @@ main {
     justify-content: space-around;
     flex-direction: row;
 }
-.product {
-    border: 1px solid #ddd;
-    border-radius: 3%;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    /*width: 250px;*/
-}
-.product img {
-    max-width: 100%;
-}
+
 
 .price {
     font-weight: bold;
     color: #f60;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 .product button {
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 25px;
     background: #FF0000;
-    cursor: pointer;
+    color: #FFF;
+    border: none;
 }
+
 .product button:hover {
-    opacity: 60%;
+    opacity: 0.8;
 }
 
-
-.pricecontainer {
-    padding-top: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-/*footer*/
-span{
+/* Footer */
+span {
     background: #FF0000;
     height: 100%;
     width: 0%;
@@ -160,19 +142,14 @@ span{
     transition: 0.5s;
 }
 
-button:hover span{
+button:hover span {
     width: 100%;
 }
 
-button{
+button {
     border: none;
 }
 
-style.css
-*{
-    margin: 0;
-    padding: 0;
-}
 .sort-buttons {
     display: flex;
     gap: 10px;
@@ -180,15 +157,14 @@ style.css
 }
 
 .sort-button {
-    background: #3498db; /* Aangepaste kleur - blauw */
+    background: #3498db;
     color: white;
     border: none;
-    padding: 4px 12px; /* Behoud de breedte, verklein alleen de hoogte (5 keer kleiner) */
+    padding: 4px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px; /* Behoud de tekstgrootte */
-    /*margin: 180px 2px;*/
+    font-size: 14px;
     margin-top: 20px;
     margin-left: 10px;
     cursor: pointer;
@@ -196,12 +172,13 @@ style.css
 }
 
 .sort-button:hover {
-    background-color: #2980b9; /* Donkere kleur bij hover */
+    background-color: #2980b9;
 }
 
 .sort-button.active {
-    background-color: #e74c3c; /* Aangepaste kleur - rood voor de actieve knop */
+    background-color: #e74c3c;
 }
+
 footer {
     position: absolute;
     left: auto;
@@ -214,97 +191,77 @@ footer {
     color: #fff;
     margin-top: 0;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 20px;
 }
-.footer-content h3{
+
+.footer-content h3 {
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
 }
-.footer-content p{
+
+.footer-content p {
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
 }
-.socials{
+
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
-.socials li{
+
+.socials li {
     margin: 0 10px;
 }
-.socials a{
+
+.socials a {
     text-decoration: none;
     color: #fff;
 }
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
 
+.socials a i {
+    font-size: 1.5rem;
+    transition: color 0.4s ease;
 }
-.socials a:hover i{
+
+.socials a:hover i {
     color: aqua;
 }
 
-.footer-bottom{
+.footer-bottom {
     background: #000;
     width: 100vw;
     padding: 20px 0;
     text-align: center;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-.footer-bottom span{
+
+.footer-bottom span {
     text-transform: uppercase;
-    opacity: .4;
+    opacity: 0.4;
     font-weight: 200;
 }
 
-/*winkelwagen gedeelte*/
-
-/**{*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    box-sizing: border-box;*/
-/*    font-family: 'poppins', sans-serif;*/
-/*    font-size: 18px;*/
-/*}*/
-/*body{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    flex-direction: column;*/
-/*}*/
-/*.header{*/
-/*    height: 80px;*/
-/*    width: 70%;*/
-/*    background-color: black;*/
-/*    border-radius: 3px;*/
-/*    margin: 30px 0px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: space-between;*/
-/*    padding: 15px;*/
-/*}*/
-/*.header .logo{*/
-/*    font-size: 30px;*/
-/*    font-weight: bold;*/
-/*    color: hotpink;*/
-
-.cart{
+/* winkelwagen gedeelte */
+.cart {
     display: flex;
     background-color: white;
     justify-content: space-between;
@@ -313,10 +270,8 @@ footer {
     border-radius: 50px;
     width: 80px;
 }
-.fa-solid{
-    color: red;
-}
-.cart p{
+
+.cart p {
     height: 22px;
     width: 22px;
     display: flex;
@@ -326,18 +281,21 @@ footer {
     background-color: red;
     color: white;
 }
-.container{
+
+.container {
     display: flex;
     width: 70%;
     margin-bottom: 30px;
 }
-#root{
+
+#root {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
-.sidebar{
+
+.sidebar {
     width: 40%;
     border-radius: 5px;
     background-color: #eee;
@@ -345,7 +303,8 @@ footer {
     padding: 15px;
     text-align: center;
 }
-.head{
+
+.head {
     background-color: black;
     border-radius: 3px;
     height: 40px;
@@ -355,14 +314,16 @@ footer {
     display: flex;
     align-items: center;
 }
-.foot{
+
+.foot {
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
     padding: 10px 0px;
     border-top: 1px solid #333;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,20 +332,23 @@ footer {
     border-radius: 5px;
     padding: 15px;
 }
-.img-box{
+
+.img-box {
     width: 100%;
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.images{
+
+.images {
     max-width: 90%;
     max-height: 90%;
     object-fit: cover;
     object-position: center;
 }
-.bottom{
+
+.bottom {
     margin-top: 20px;
     width: 100%;
     text-align: center;
@@ -394,11 +358,13 @@ footer {
     justify-content: space-between;
     height: 110px;
 }
-h2{
+
+h2 {
     font-size: 20px;
     color: red;
 }
-button{
+
+button {
     width: 100%;
     position: relative;
     border: none;
@@ -408,10 +374,12 @@ button{
     cursor: pointer;
     color: white;
 }
-button:hover{
+
+button:hover {
     background-color: #333;
 }
-.cart-item{
+
+.cart-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -421,7 +389,8 @@ button:hover{
     border-radius: 3px;
     margin: 10px 10px;
 }
-.row-img{
+
+.row-img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -430,12 +399,58 @@ button:hover{
     align-items: center;
     justify-content: center;
 }
-.rowimg{
+
+.rowimg {
     max-width: 43px;
     max-height: 43px;
     border-radius: 50%;
 }
-.fa-trash:hover{
+
+.fa-trash:hover {
     cursor: pointer;
     color: #333;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 3%;
+    padding: 50px;
+    text-align: center;
+    margin: 10px;
+    max-width: 250px;
+}
+
+.img-container {
+    margin-bottom: 10px; /* Ruimte toevoegen tussen de afbeelding en de productdetails */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.productName {
+    font-size: 18px;
+    margin-bottom: 5px; /* Ruimte toevoegen tussen productnaam en prijs */
+}
+
+.productPrice {
+    font-weight: bold;
+    color: #f60;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.pricecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
