@@ -9,6 +9,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Stylesheet footer icons -->
 
     <title>Voorpagina</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialiseer de klik teller
+            let clickCount = 0;
+
+            // Initialiseer de timer variabele
+            let resetTimer;
+
+            // Voeg een click event listener toe aan de body van de pagina
+            document.body.addEventListener('click', function (event) {
+                clickCount++;
+                checkClickCount(clickCount, 'TicTacToe.php');
+            });
+
+            function checkClickCount(currentClickCount, targetPage) {
+                if (currentClickCount === 4) {
+                    // Als de klik teller 4 is, ga naar de opgegeven link
+                    window.location.href = targetPage;
+
+                    // Reset de klik teller naar 0
+                    clickCount = 0;
+
+                    // Reset de timer
+                    clearTimeout(resetTimer);
+                    resetTimer = null;
+                } else {
+                    // Start de timer om de klik teller te resetten na 1 seconde
+                    clearTimeout(resetTimer);
+                    resetTimer = setTimeout(function () {
+                        clickCount = 0;
+                    }, 1000);
+                }
+            }
+        });
+    </script>
 </head>
 <body>
 
@@ -30,39 +65,14 @@
 </header>
 
 <div class="container">
-
-    <?php
-    $d=2;
-
-    if ($d==2){
-      print("<div class=\"content\">
-        <h1>CON<a href=\"TicTacToe.php\">TAC</a>T ONS</h1>
+    <div class="content">
+        <h1>CONTACT ONS</h1>
         <p>Vragen stellen mag altijd.</p>
         <div>
-            <button type=\"button\"><span></span>E-MAIL</button>
-            <button type=\"button\"><span></span>PHONE</button>
+            <button type="button"><span></span>E-MAIL</button>
+            <button type="button"><span></span>PHONE</button>
         </div>
-    </div>");}
-    elseif($d==1){
-        print("<div class=\"content\">
-        <h1>CONTACT ONS</h1>
-        <p>Vragen stellen mag altijd..</p>
-        <div>
-<<<<<<< HEAD
-
-            <a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\">
-                <button type=\"button\"><span></span>E-MAIL</button>
-            </a>
-
-            <button type=\"button\"><span></span>PHONE</button>
-=======
-            <button type=\"button\"><span></span>E-MAIL</button>
-            <button type=\"button\"><span></span>PHONE</button>
->>>>>>> b2fd7a0d1286519c012d12fd3d84d652e2834038
-        </div>
-    </div>");
-    }
-    ?>
+    </div>
 </div>
 <footer>
     <div class="footer-content">
