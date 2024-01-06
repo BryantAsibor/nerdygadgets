@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         if ($user_data['password'] === $password) {
             // Wachtwoord komt overeen - inloggen geslaagd
             $_SESSION["email"] = $user_data['user_id'];
-            header("Location: http://localhost:63342/Shop.html/Homepage/Home/index.php?_ijt=6ptdig7gouiens1gu32njoh3f5&_ij_reload=RELOAD_ON_SAVE");
+            header("Location: http://localhost:63342/index.php/Homepage/Home/index.php?_ijt=i9jk797t5jm7o57oek807mm7pm&_ij_reload=RELOAD_ON_SAVE");
             $Ingelogd = "Waar";
             die;
         } else {
