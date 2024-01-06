@@ -1,33 +1,47 @@
 <?php
+// Inclusie van bestanden
+include("../includes/connection.php");
+include("../includes/functions.php");
 
-
-
-    include("../includes/connection.php");
-    include("../includes/functions.php");
-
-if($_SERVER['REQUEST_METHOD'] == "POST")
-{
-    //somthing was posted
+// Controleer of het een POST-verzoek is
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    // Ontvang gegevens van het formulier
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $first_name = $_POST["first_name"];
 
 
-    $query = "insert into nerdy_gadgets_start.user (email, password, first_name) values ('$email','$password','$first_name')";
+    // Valideer het wachtwoord
+    if (!validatePassword($password)) {
+        echo "<p style='color: white;'>Wachtwoord voldoet niet aan de vereisten:<br>- Minimaal 8 karakters<br>- Minimaal 1 hoofdletter<br>- Minimaal 1 speciaal teken</p>";
+        // Voer hier andere acties uit, bijv. stop de registratie of geef een foutmelding aan de gebruiker
+    } else
+        // Rest van je code hier
 
-    mysqli_query($con, $query);
+    {
+        // Query om gebruiker toe te voegen aan de database
+        $query = "INSERT INTO nerdy_gadgets_start.user (email, password, first_name) VALUES ('$email','$password','$first_name')";
 
-    if (mysqli_query($con, $query)) {
-        echo "Record succesvol toegevoegd.";
-    } else {
-        echo "Fout bij toevoegen van het record: " . mysqli_error($con);
+        // Voer de query uit
+        if (!mysqli_query($con, $query)) {
+            echo "Fout bij toevoegen van het record: " . mysqli_error($con);
+            die;
+        } else {
+            echo "Record succesvol toegevoegd.";
+        }
+
+        // Stuur de gebruiker door naar de inlogpagina
+        header("Location: Login.php");
+        die;
     }
-
-    header("Location: Login.php");
-    die;
-
 }
 
+// Functie om wachtwoord te valideren
+function validatePassword($password) {
+    // Minimaal 8 karakters, minimaal 1 hoofdletter, minimaal 1 speciaal teken
+    $passwordPattern = '/^(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,}$/';
+
+    return preg_match($passwordPattern, $password);
+}
 ?>
 
 
@@ -114,20 +128,3 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 
 
-
-<script>
-    // JavaScript-functie om wachtwoord te valideren
-    function validatePassword() {
-        var password = document.getElementById("password").value;
-
-        // Minimaal 8 karakters, minimaal 1 hoofdletter, minimaal 1 speciaal teken
-        var passwordPattern = /^(?=.*[A-Z])(?=.*[^A-Za-z0-9]).{8,}$/;
-
-        if (!passwordPattern.test(password)) {
-            alert("Wachtwoord voldoet niet aan de vereisten:\n- Minimaal 8 karakters\n- Minimaal 1 hoofdletter\n- Minimaal 1 speciaal teken");
-            return false;
-        }
-
-        return true;
-    }
-</script>
