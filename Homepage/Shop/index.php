@@ -72,7 +72,7 @@ $result = mysqli_query($connection, $sql);
                 <img src="../img/logo.png" class="logo" id="clickCounter">
                 <ul>
                     <li><a href="../Home/index.php">Home</a></li>
-                    <li><a href="../Shop/index.php">Shop</a></li>
+                    <li><a href="../Shop/index.php">Winkel</a></li>
                     <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
                     <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
@@ -188,7 +188,7 @@ $result = mysqli_query($connection, $sql);
                 ?>
 
                 <div class="foot">
-                    <h3>Total</h3>
+                    <h3>Totaal</h3>
                     <h2 id="total">&euro; 0.00</h2>
                 </div>
             </div>
@@ -229,7 +229,7 @@ $result = mysqli_query($connection, $sql);
         </ul>
     </div>
     <div class="footer-bottom">
-        <p>copyright &copy;2023 . designed by NerdyGadgets <span>nethunt</span></p>
+        <p>copyright &copy;2023 . Gemaakt door NerdyGadgets <span>nethunt</span></p>
     </div>
 </footer>
 </html>

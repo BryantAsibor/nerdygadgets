@@ -8,7 +8,8 @@
     <footer>
         <div class="footer-content">
             <h3>NerdyGadgets</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <p>NerdyGadgets</p>
+
             <ul class="socials">
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -16,7 +17,7 @@
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>copyright &copy;2023 . designed by NerdyGadgets </p>
+            <p>copyright &copy;2023 . Gemaakt door NerdyGadgets </p>
         </div>
 
     </footer>

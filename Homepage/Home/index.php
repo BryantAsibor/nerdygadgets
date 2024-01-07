@@ -35,11 +35,12 @@ $user_data = check_login($con);
                 <img src="logo.png" class="logo" id="clickCounter">
                 <ul>
                     <li><a href="../Home/index.php">Home</a></li>
-                    <li><a href="../Shop/index.php">Shop</a></li>
+                    <li><a href="../Shop/index.php">Winkel</a></li>
                     <li><a href="../OverOnsBryce/overonstest.php">Over ons</a>
                     <li><a href="../Contact/contact.php">Contact</a></li>
                 </ul>
                 <a href="../LoginAnwish/Login.php"> <img src="b64f8fcf0e0aed9537c800eb5e9ca1ed.png" class="pfp"></a>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
             </div>
         </nav>
     </div>
@@ -86,10 +87,10 @@ $user_data = check_login($con);
 
 <div class="content">
     <h1>NERDYGADGETS</h1>
-    <p>Where Ideas Become Reality</p>
+    <p>Waar Ideeën realiteit worden</p>
     <div>
         <a href="../LoginAnwish/Login.php"> <button type="button"><span></span>LOG IN</button> </a>
-        <a href="../LoginAnwish/regist.php"> <button type="button"><span></span>REGISTER</button> </a>    </div>
+        <a href="../LoginAnwish/regist.php"> <button type="button"><span></span>REGISTREER</button> </a>    </div>
 </div>
 
 </header>

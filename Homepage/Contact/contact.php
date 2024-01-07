@@ -55,10 +55,12 @@
                 <img src="logo.png" class="logo">
                 <ul>
                     <li><a href="../Home/index.php">Home</a></li>
-                    <li><a href="../Shop/index.php">Shop</a></li>
+                    <li><a href="../Shop/index.php">Winkel</a></li>
                     <li><a href="../OverOnsBryce/overonstest.php">Over ons</a></li>
                     <li><input type="button" value="Contact" onclick="Random();" class="balls" /></li>
                 </ul>
+                <a href="../LoginAnwish/Login.php"> <img src="b64f8fcf0e0aed9537c800eb5e9ca1ed.png" class="pfp"></a>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
             </div>
         </nav>
     </div>
@@ -93,7 +95,7 @@
 <footer>
     <div class="footer-content">
         <h3>NerdyGadgets</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+        <p>NerdyGadgets</p>
         <ul class="socials">
             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -101,7 +103,7 @@
         </ul>
     </div>
     <div class="footer-bottom">
-        <p>copyright &copy;2023 . designed by NerdyGadgets <span>nethunt</span></p>
+        <p>copyright &copy;2023 . Gemaakt door NerdyGadgets <span>nethunt</span></p>
     </div>
 
 </footer>
