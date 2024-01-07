@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </div>
 
 <div class="login">
-    <p>Log in</p>
+    <p>Inloggen</p>
 </div>
 
 <div class="loginbox">
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         <div class="input-field">
             <input type="email" id="email" name="email" placeholder="E-mail" required>
-            <label>Enter your email:</label>
+            <label>Voer je email in:</label>
         </div>
 
         <div class="input-field">
@@ -73,24 +73,24 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="forget">
             <div class="remeber">
                 <input class="vinkje" type="checkbox" id="remember">
-                <p>Remember me</p>
+                <p>Onthoud mij</p>
             </div>
 
             <div class="forgotpassw">
-                <a href="#">Forgot password?</a>
+                <a href="wachtwoordvergeten.php">Wachtwoord vergeten?</a>
             </div>
         </div>
 
-        <button type="submit">Log In</button>
+        <button type="submit">Inloggen</button>
 
         <div class="register">
-            <p>Don't have an account? <a href="regist.php">Register</a></p>
+            <p>Geen account? <a href="regist.php">Registreer</a></p>
         </div>
     </form>
 </div>
 
 <div class="homepagelink">
-    <a href="../Home/index.php"> Back to Homepage </a>
+    <a href="../Home/index.php"> Terug naar Homepagina </a>
 </div>
 
 </body>

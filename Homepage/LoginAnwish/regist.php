@@ -63,7 +63,7 @@ function validatePassword($password) {
     <img class="logo" src="/Homepage/src/logo.png">
 </div>
 <div class="login">
-    <p>Register</p>
+    <p>Registreer</p>
 </div>
 
 <div class="loginbox">
@@ -75,21 +75,21 @@ function validatePassword($password) {
         <div class="gegevens">
 
             <div class="inputveld">
-                <label for="fullname">First Name:</label>
-                <input type="text" id="first_name" name="First Name" placeholder="First Name" required>
+                <label for="fullname">Voornaam:</label>
+                <input type="text" id="first_name" name="First Name" placeholder="Voornaam" required>
             </div>    <div class="inputveld">
                 <label for="email">E-mailadres:</label>
                 <input type="email" id="email" name="email" placeholder="E-mail" required>
             </div>    <div class="inputveld">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <label for="password">Wachtwoord:</label>
+                <input type="password" id="password" name="password" placeholder="Wachtwoord" required>
             </div>        <div class="inputveld">
-                <label for="confirm-password">Confirm-password:</label>
-                <input type="password" id="confirm-password" name="Confirm-password" placeholder="Confirm-password" required>
+                <label for="confirm-password">Bevestig wachtwoord:</label>
+                <input type="password" id="confirm-password" name="Confirm-password" placeholder="Bevestig wachtwoord" required>
             </div>
-            <button type="submit" name="submit">Submit</button>
+            <button type="submit" name="submit">Registreer</button>
         </div>
-        <p>Heb je al een account? <a href="Login.php">Log in</a></p>
+        <p>Heb je al een account? <a href="Login.php">Inloggen</a></p>
     </form>
 
 

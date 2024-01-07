@@ -1,0 +1,108 @@
+
+body {
+    background-image: url('achtergrondlogin.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cart {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 50px;
+    width: 80px;
+}
+
+.login {
+    color: #FFFFFF;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: -20px;
+
+}
+
+
+.loginbox {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+
+
+
+
+.afb1 {
+    width: 200px;
+    height: auto;
+    margin: auto auto auto auto;
+
+
+}
+
+.homepagelink {
+
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+.loginbox {
+
+    display: flex;
+    justify-content: center;
+
+    border: 3px solid #A54136;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: rgb(0, 0, 0, 0.9);
+
+
+
+}
+
+.input-field {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column-reverse;
+    color: #FFFFFF;
+
+}
+
+.forget {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FFFFFF;
+
+
+}
+
+.forgotpassw {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.remeber {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-right: 10px;
+
+}
+
+.register {
+    color: #FFFFFF;
+
+}
+
+.vinkje {
+    margin-top: -15px;
+}
