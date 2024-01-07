@@ -1,34 +1,39 @@
 const product = [
-    // {
-    //     id: 0,
-    //     image: 'image/N0mKEJoGBVVm.jpg',
-    //     title: 'Apple MacBook Air (2020)',
-    //     price: 120,
-    //     symbol: '&euro;'
-    // },
-    // {
-    //     id: 1,
-    //     image: 'image/hh-2.jpg',
-    //     title: 'Air Pods Pro',
-    //     price: 60,
-    //     symbol: '&euro;'
-    // },
-    // {
-    //     id: 2,
-    //     image: 'image/ee-3.jpg',
-    //     title: '250D DSLR Camera',
-    //     price: 230,
-    //     symbol: '&euro;'
-    // },
-    // {
-    //     id: 3,
-    //     image: 'image/aa-1.jpg',
-    //     title: 'Head Phones',
-    //     price: 100,
-    //     symbol: '&euro;'
-    // }
+    {
+        id: 0,
+        image: 'image/N0mKEJoGBVVm.jpg',
+        title: 'Apple MacBook Air (2020)',
+        price: 120,
+        symbol: '&euro;'
+    },
+    {
+        id: 1,
+        image: 'image/hh-2.jpg',
+        title: 'Air Pods Pro',
+        price: 60,
+        symbol: '&euro;'
+    },
+    {
+        id: 2,
+        image: 'image/ee-3.jpg',
+        title: '250D DSLR Camera',
+        price: 230,
+        symbol: '&euro;'
+    },
+    {
+        id: 3,
+        image: 'image/aa-1.jpg',
+        title: 'Head Phones',
+        price: 100,
+        symbol: '&euro;'
+
+
+
+
+    }
 
 ];
+
 
 const categories = [...new Set(product.map((item) => item))];
 let i = 0;

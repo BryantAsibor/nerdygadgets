@@ -22,9 +22,6 @@ if (isset($_GET['sort'])) {
     $sortOrder = 'desc';
 }
 
-// Default sorteeroptie is 'desc' (hoog naar laag)
-//$sortOrder = isset($_GET['sort']) ? $_GET['sort'] : 'desc';
-
 if ($quantitySort) {
     $sql = "SELECT product.id, product.name, product.price, product.image, COUNT(order_item.product_id) as popularity
            FROM nerdy_gadgets_start.product
@@ -38,24 +35,7 @@ if ($quantitySort) {
 $result = mysqli_query($connection, $sql);
 
 ?>
-<script>
-    // JavaScript om de klik te verwerken
-    var clickCount = 0;
-
-    document.getElementById('clickCounter').addEventListener('click', function() {
-        // Verhoog het aantal klikken
-        clickCount++;
-
-        // Controleer of het vereiste aantal klikken is bereikt (in dit geval 4)
-        if (clickCount >= 4) {
-            // Stuur door naar test.php als het vereiste aantal klikken is bereikt
-            window.location.href = '../easteregg anwish/easteregganwish.php';
-        }
-    });
-</script>
 <!DOCTYPE html>
-<head lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Online Shop</title>
@@ -89,7 +69,7 @@ $result = mysqli_query($connection, $sql);
     <div class="header">
         <nav>
             <div class="navbar">
-                <img src="logo.png" class="logo" id="clickCounter">
+                <img src="../img/logo.png" class="logo" id="clickCounter">
                 <ul>
                     <li><a href="../Home/index.php">Home</a></li>
                     <li><a href="../Shop/index.php">Shop</a></li>
@@ -158,7 +138,7 @@ $result = mysqli_query($connection, $sql);
                     <div class="row pricecontainer">
                         <h4><?php print($row["price"]) ?>,-</h4>
                         <!--Verstuurd gekozen productID voor winkelwagen naar $_POST['submit']-->
-                        <form action="" method="post">
+                        <form action="add.php" method="post">
                             <button type="submit" name="submit" value="<?php echo $row['id'] ?>">
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
@@ -194,9 +174,19 @@ $result = mysqli_query($connection, $sql);
                 <div id="cartItem">Winkelmand is leeg</div>
                 <?php
                 if (isset($_COOKIE['cart'])) {
+                    $cookieID = $_COOKIE['cart'];
 
+                    $sql = "SELECT name, price, image FROM nerdy_gadgets_start.product WHERE id = $cookieID";
+
+
+              ?>
+                <a href="product.php?id=<?php print($row["id"])?>"><img src="../img/<?php print($row["image"]) ?>.jpg" alt="Product 1"
+                                                                        style="width: auto; height: 120px; margin: auto"></a>
+                <?php
                 }
+
                 ?>
+
                 <div class="foot">
                     <h3>Total</h3>
                     <h2 id="total">&euro; 0.00</h2>
@@ -209,6 +199,22 @@ $result = mysqli_query($connection, $sql);
 
     </div>
 </div>
+
+<script>
+    // JavaScript om de klik te verwerken
+    var clickCount = 0;
+
+    document.getElementById('clickCounter').addEventListener('click', function() {
+        // Verhoog het aantal klikken
+        clickCount++;
+
+        // Controleer of het vereiste aantal klikken is bereikt (in dit geval 4)
+        if (clickCount >= 4) {
+            // Stuur door naar test.php als het vereiste aantal klikken is bereikt
+            window.location.href = '../easteregg anwish/easteregganwish.php';
+        }
+    });
+</script>
 
 </body>
 
