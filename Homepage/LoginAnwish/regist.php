@@ -23,10 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         // Voer de query uit
         if (!mysqli_query($con, $query)) {
-            echo "Fout bij toevoegen van het record: " . mysqli_error($con);
+            echo "<p style='color: white;'>Fout bij toevoegen van het record: </p> " . mysqli_error($con);
             die;
         } else {
-            echo "Record succesvol toegevoegd.";
+            echo "<p style='color: white;'> Record succesvol toegevoegd.</p>";
         }
 
         // Stuur de gebruiker door naar de inlogpagina

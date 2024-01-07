@@ -28,11 +28,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             die;
         } else {
             // Ongeldig wachtwoord
-            echo "Invalid password!";
+            echo "<p style='color: white;'> Onjuiste wachtwoord! </p>";
         }
     } else {
         // Gebruiker niet gevonden
-        echo "User not found!";
+        echo "<p style='color: white;'> Gebruiker niet gevonden!</p>";
     }
 }
 
